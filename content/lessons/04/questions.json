@@ -1,0 +1,66 @@
+[
+ {
+  "id": "q04-1",
+  "type": "single",
+  "level": 1,
+  "text": "Какой компонент SQL Server отвечает за OLAP и data mining?",
+  "options": [
+   "Master Data Services",
+   "SQL Server Integration Services",
+   "SQL Server Analysis Services",
+   "Power Query"
+  ],
+  "correct": 2,
+  "explain": "SSAS (SQL Server Analysis Services) обеспечивает OLAP и data mining внутри SQL Server."
+ },
+ {
+  "id": "q04-2",
+  "type": "truefalse",
+  "level": 1,
+  "text": "Верно ли, что Power BI работает с OLAP-кубами?",
+  "correct": false,
+  "explain": "Неверно. Среди недостатков Power BI в лекции указано, что он не работает с OLAP-кубами."
+ },
+ {
+  "id": "q04-3",
+  "type": "input",
+  "level": 2,
+  "text": "Как называется язык запросов к многомерным кубам, упомянутый в примере? Введите аббревиатуру.",
+  "answers": [
+   "MDX"
+  ],
+  "explain": "MDX (MultiDimensional eXpressions) — язык запросов к многомерным кубам."
+ },
+ {
+  "id": "q04-4",
+  "type": "multiple",
+  "level": 2,
+  "text": "На какие вопросы отвечает Data Science? Отметьте все верные.",
+  "options": [
+   "Что будет дальше?",
+   "Какой оптимальный сценарий?",
+   "Сколько товара мы продали в прошлом квартале?",
+   "А что, если…?"
+  ],
+  "correct": [
+   0,
+   1,
+   3
+  ],
+  "explain": "Data Science нацелена на прогноз и оптимизацию. Вопрос о продажах прошлого квартала — типичный вопрос BI."
+ },
+ {
+  "id": "q04-5",
+  "type": "single",
+  "level": 3,
+  "text": "Таблица «страны × компании-доставщики» с суммами заказов в ячейках — это…",
+  "options": [
+   "Вектор",
+   "Сводная таблица (двумерный массив)",
+   "Трёхмерный куб",
+   "Справочник мастер-данных"
+  ],
+  "correct": 1,
+  "explain": "Два измерения (страна и доставщик) образуют сводную таблицу, или кросс-таблицу."
+ }
+]

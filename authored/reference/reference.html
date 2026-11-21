@@ -1,0 +1,97 @@
+<h2>Единицы измерения объёма данных</h2>
+<table>
+<tr><th>Единица</th><th>Обозначение</th><th>Десятичная система</th><th>Двоичная система</th></tr>
+<tr><td>Килобайт</td><td>КБ</td><td>10<sup>3</sup> байт</td><td>2<sup>10</sup> = 1024 байт</td></tr>
+<tr><td>Мегабайт</td><td>МБ</td><td>10<sup>6</sup></td><td>2<sup>20</sup></td></tr>
+<tr><td>Гигабайт</td><td>ГБ</td><td>10<sup>9</sup></td><td>2<sup>30</sup></td></tr>
+<tr><td>Терабайт</td><td>ТБ</td><td>10<sup>12</sup></td><td>2<sup>40</sup></td></tr>
+<tr><td>Петабайт</td><td>ПБ</td><td>10<sup>15</sup></td><td>2<sup>50</sup></td></tr>
+<tr><td>Эксабайт</td><td>ЭБ</td><td>10<sup>18</sup></td><td>2<sup>60</sup></td></tr>
+<tr><td>Зеттабайт</td><td>ЗБ</td><td>10<sup>21</sup></td><td>2<sup>70</sup></td></tr>
+</table>
+
+<h2>Характеристики Big Data («5V»)</h2>
+<table>
+<tr><th>Характеристика</th><th>Смысл</th></tr>
+<tr><td>Volume</td><td>Объём</td></tr>
+<tr><td>Velocity</td><td>Скорость поступления и обработки</td></tr>
+<tr><td>Variety</td><td>Многообразие форматов</td></tr>
+<tr><td>Veracity</td><td>Достоверность</td></tr>
+<tr><td>Value</td><td>Ценность</td></tr>
+</table>
+<p>Первые три образуют принцип «Трёх V».</p>
+
+<h2>Экосистема Hadoop</h2>
+<table>
+<tr><th>Компонент</th><th>Назначение</th></tr>
+<tr><td>HDFS</td><td>Распределённая файловая система (Name Node, Data Node)</td></tr>
+<tr><td>MapReduce</td><td>Модель распределённых вычислений (Map → Reduce)</td></tr>
+<tr><td>YARN</td><td>Управление ресурсами кластера (Hadoop 2.0)</td></tr>
+<tr><td>HBase</td><td>NoSQL база данных поверх HDFS</td></tr>
+<tr><td>Hive</td><td>SQL-подобные запросы (HiveQL)</td></tr>
+<tr><td>Pig</td><td>Процедурный язык запросов к слабоструктурированным данным</td></tr>
+<tr><td>Mahout</td><td>Библиотеки машинного обучения</td></tr>
+<tr><td>Sqoop</td><td>Обмен данными между Hadoop и реляционными БД</td></tr>
+<tr><td>Flume</td><td>Сбор потоков данных (логов)</td></tr>
+<tr><td>ZooKeeper</td><td>Синхронизация и конфигурирование</td></tr>
+<tr><td>Avro</td><td>Сериализация данных</td></tr>
+<tr><td>HUE</td><td>Web-интерфейс к Hadoop</td></tr>
+<tr><td>Spark</td><td>Быстрые кластерные вычисления: Spark SQL, Streaming, MLlib, GraphX</td></tr>
+</table>
+
+<h2>Теорема CAP и типы NoSQL-хранилищ</h2>
+<table>
+<tr><th>Класс</th><th>Обеспечивает</th><th>Жертвует</th><th>Пример</th></tr>
+<tr><td>CA</td><td>Согласованность, доступность</td><td>Устойчивость к разделению</td><td>Кластерные СУБД, LDAP</td></tr>
+<tr><td>CP</td><td>Согласованность, устойчивость к разделению</td><td>Доступность</td><td>Системы с распределёнными блокировками</td></tr>
+<tr><td>AP</td><td>Доступность, устойчивость к разделению</td><td>Согласованность</td><td>DNS, веб-кэши, большинство NoSQL</td></tr>
+</table>
+<table>
+<tr><th>Тип хранилища</th><th>Модель</th><th>Пример применения</th></tr>
+<tr><td>Key/value store</td><td>Уникальный ключ → значение</td><td>Кэш, сессии пользователей</td></tr>
+<tr><td>Column store</td><td>Строки × колонки × временные метки</td><td>Большие разреженные таблицы</td></tr>
+<tr><td>Document store</td><td>Документы JSON/XML с запросами к структуре</td><td>Каталоги товаров, профили (MongoDB)</td></tr>
+<tr><td>Graph store</td><td>Узлы и связи с атрибутами</td><td>Социальные связи, рекомендации</td></tr>
+</table>
+
+<h2>Формулы</h2>
+<table>
+<tr><th>Величина</th><th>Формула</th></tr>
+<tr><td>Точность (Precision)</td><td>TP / (TP + FP)</td></tr>
+<tr><td>Полнота (Recall, TPR)</td><td>TP / (TP + FN)</td></tr>
+<tr><td>Доля ложных срабатываний (FPR)</td><td>FP / (FP + TN)</td></tr>
+<tr><td>F-мера</td><td>1 / (α / Precision + (1 − α) / Recall); при α = 0,5: 2 · P · R / (P + R)</td></tr>
+<tr><td>Поддержка набора φ</td><td>v(φ) = (число объектов, содержащих φ) / n</td></tr>
+<tr><td>Значимость правила φ → y</td><td>v(y | φ) = v(φ ∪ y) / v(φ)</td></tr>
+<tr><td>Центр кластера (k-means)</td><td>μ<sub>k</sub> = (1 / s<sub>k</sub>) · Σ x, сумма по точкам кластера k</td></tr>
+<tr><td>Мощность критерия</td><td>1 − β</td></tr>
+<tr><td>Абсолютная ошибка</td><td>|α(x) − y(x)|</td></tr>
+<tr><td>Квадратичная ошибка</td><td>(α(x) − y(x))<sup>2</sup></td></tr>
+</table>
+
+<h2>Основные функции R, используемые в курсе</h2>
+<table>
+<tr><th>Функция</th><th>Назначение</th></tr>
+<tr><td><code>data(mtcars)</code>, <code>head()</code></td><td>Загрузить встроенный набор данных, показать первые строки</td></tr>
+<tr><td><code>mean()</code>, <code>median()</code>, <code>sd()</code>, <code>var()</code>, <code>IQR()</code></td><td>Среднее, медиана, стандартное отклонение, дисперсия, межквартильный размах</td></tr>
+<tr><td><code>summary()</code></td><td>Сводка по данным или модели</td></tr>
+<tr><td><code>na.omit()</code>, <code>is.na()</code></td><td>Удалить строки с пропусками, найти пропуски</td></tr>
+<tr><td><code>write.csv()</code>, <code>read.csv()</code></td><td>Сохранить и загрузить CSV</td></tr>
+<tr><td><code>filter()</code>, <code>arrange()</code>, <code>group_by()</code>, <code>summarise()</code></td><td>Пакет dplyr: фильтрация, сортировка, группировка, агрегирование</td></tr>
+<tr><td><code>ggplot() + geom_histogram()/geom_boxplot()/geom_point()</code></td><td>Пакет ggplot2: гистограмма, диаграмма размаха, точечный график</td></tr>
+<tr><td><code>lm(y ~ x, data)</code></td><td>Линейная регрессия</td></tr>
+<tr><td><code>kmeans(x, centers)</code></td><td>Кластеризация k-средних</td></tr>
+<tr><td><code>cor()</code>, <code>cov()</code></td><td>Корреляция и ковариация</td></tr>
+<tr><td><code>t.test()</code></td><td>t-критерий Стьюдента</td></tr>
+<tr><td><code>ts()</code>, <code>decompose()</code></td><td>Временной ряд и его разложение на компоненты</td></tr>
+<tr><td><code>as.Date()</code>, <code>difftime()</code></td><td>Работа с датами</td></tr>
+<tr><td><code>install.packages("dplyr")</code>, <code>library(dplyr)</code></td><td>Установить и подключить пакет</td></tr>
+</table>
+
+<h2>Порядок выполнения лабораторных работ</h2>
+<ol>
+<li>Установите R (cran.r-project.org) и RStudio (posit.co).</li>
+<li>Установите пакеты один раз: <code>install.packages(c("dplyr", "ggplot2", "stringr", "forecast"))</code>.</li>
+<li>Для каждой работы создайте отдельный скрипт (File → New File → R Script) и сохраните его с расширением .R.</li>
+<li>В отчёт включите: цель, код, результаты (вывод консоли и графики), выводы.</li>
+</ol>

@@ -1,0 +1,35 @@
+<h3>Задание 1. Проект дашборда</h3>
+<p><strong>Цель:</strong> Научиться проектировать дашборд без перегрузки лишней информацией.</p>
+<p><strong>Порядок выполнения:</strong></p><ol>
+<li>Выберите пользователя дашборда: декан факультета, владелец кофейни или фитнес-тренер.</li>
+<li>Определите 5–7 показателей, которые этот пользователь должен видеть постоянно.</li>
+<li>Для каждого показателя выберите вид графика и обоснуйте выбор.</li>
+<li>Нарисуйте макет дашборда (от руки или в любом редакторе).</li>
+<li>Укажите, какие показатели вы сознательно НЕ включили и почему.</li>
+</ol>
+<p><strong>Ожидаемый результат:</strong> Макет дашборда и пояснительная таблица.</p>
+<p><strong>Форма представления:</strong> Изображение макета и таблица «Показатель — Вид графика — Обоснование».</p>
+<details class='hint'><summary>Подсказка</summary><p>В лекции отмечено, что дашборды часто перегружают ненужной информацией — избегайте этого.</p></details>
+<h3>Лабораторная работа A4. Визуализация данных</h3>
+<p><strong>Цель: </strong>Научиться строить графики и диаграммы.</p>
+<br/>
+<h4><strong>Задания:</strong></h4>
+<p>1. <strong>Гистограмма</strong></p>
+<h4><strong>Постройте гистограмму распределения значений mpg:</strong></h4>
+<pre><code class="language-r">library(ggplot2)
+ggplot(mtcars, aes(x = mpg)) + geom_histogram(binwidth = 2) + labs(title
+= "Гистограмма MPG")</code></pre>
+<h4>2. <strong>Диаграмма размаха</strong></h4>
+<h4><strong>Постройте диаграмму размаха для переменной mpg:</strong></h4>
+<pre><code class="language-r">ggplot(mtcars, aes(x = factor(cyl), y = mpg)) + geom_boxplot() + labs(title = "Диаграмма размаха MPG по цилиндрам")</code></pre>
+<h4>3. <strong>Точечный график</strong></h4>
+<h4><strong>Постройте точечный график для переменных mpg и wt (вес автомобиля):</strong></h4>
+<pre><code class="language-r">ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point() + labs(title = "Точечный график MPG vs. Weight")</code></pre>
+<h3>Лабораторная работа B5. Визуализация данных</h3>
+<p><strong>Цель: </strong>Создать графики для визуализации данных.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. Постройте гистограмму для переменной Sepal.Length из набора данных iris.</p>
+<pre><code class="language-r">library(ggplot2)
+ggplot(iris, aes(x = Sepal.Length)) + geom_histogram(binwidth = 0.5) + labs(title = "Гистограмма Sepal.Length")</code></pre>
+<p>2. Постройте диаграмму размаха для переменной Sepal.Length.</p>
+<pre><code class="language-r">ggplot(iris, aes(x = "", y = Sepal.Length)) + geom_boxplot() + labs(title = "Диаграмма размаха Sepal.Length")</code></pre>

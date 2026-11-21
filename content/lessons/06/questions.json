@@ -1,0 +1,79 @@
+[
+ {
+  "id": "q06-1",
+  "type": "input",
+  "level": 1,
+  "text": "Как называется фреймворк управления ресурсами, выделенный в Hadoop 2.0? Введите аббревиатуру.",
+  "answers": [
+   "YARN"
+  ],
+  "explain": "YARN (Yet Another Resource Negotiator) распределяет ресурсы кластера и следит за выполнением приложений."
+ },
+ {
+  "id": "q06-2",
+  "type": "single",
+  "level": 1,
+  "text": "Для чего используется автономный режим Hadoop?",
+  "options": [
+   "Для работы на реальном кластере",
+   "Для использования Hadoop на локальной машине как кластера из одного узла",
+   "Для работы с HDFS на нескольких узлах",
+   "Для резервного копирования"
+  ],
+  "correct": 1,
+  "explain": "Standalone Mode позволяет запускать Hadoop на одной машине как кластер из одного узла, обычно для отладки."
+ },
+ {
+  "id": "q06-3",
+  "type": "multiple",
+  "level": 2,
+  "text": "Какие компоненты Hadoop 2.0 разделили обязанности Job Tracker? Отметьте все верные.",
+  "options": [
+   "Resource Manager",
+   "Application Master",
+   "Name Node",
+   "Hive"
+  ],
+  "correct": [
+   0,
+   1
+  ],
+  "explain": "Управление ресурсами и координация жизненного цикла приложения разделены между Resource Manager и Application Master."
+ },
+ {
+  "id": "q06-4",
+  "type": "truefalse",
+  "level": 2,
+  "text": "Верно ли, что Hive разработан компанией Facebook и использует язык запросов HiveQL на основе SQL?",
+  "correct": true,
+  "explain": "Верно. Facebook разработал Hive и передал его Apache; HiveQL основан на SQL."
+ },
+ {
+  "id": "q06-5",
+  "type": "single",
+  "level": 3,
+  "text": "Какой узел отвечает за репликацию данных в Hadoop (вопрос для самопроверки из лекции)?",
+  "options": [
+   "Task Tracker",
+   "Name Node",
+   "Job Tracker",
+   "Application Master"
+  ],
+  "correct": 1,
+  "explain": "Name Node знает расположение всех блоков и управляет их репликацией; Data Node выполняют копирование по его указанию."
+ },
+ {
+  "id": "q06-6",
+  "type": "single",
+  "level": 2,
+  "text": "Какой компонент экосистемы является web-интерфейсом к Hadoop?",
+  "options": [
+   "HUE",
+   "Sqoop",
+   "Avro",
+   "Flume"
+  ],
+  "correct": 0,
+  "explain": "HUE (Hadoop User Experience) — web-интерфейс для мониторинга задач и обслуживания кластера."
+ }
+]

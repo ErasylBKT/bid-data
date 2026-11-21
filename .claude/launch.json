@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "eui-site",
+      "runtimeExecutable": "/bin/sh",
+      "runtimeArgs": ["-c", "cd '/private/tmp/claude-501/-Users-erasylbaktybergenov-Documents----------------------/91945db3-3c5b-482c-b04f-bb650c63a5ec/scratchpad/site' && exec python3 -m http.server 8765"],
+      "port": 8765
+    }
+  ]
+}

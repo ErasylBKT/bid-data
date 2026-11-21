@@ -1,0 +1,49 @@
+<h3>Задание 1. Оценка бинарного классификатора</h3>
+<p><strong>Цель:</strong> Научиться вычислять характеристики качества классификации.</p>
+<p><strong>Порядок выполнения:</strong></p><ol>
+<li>Медицинский тест проверили на 200 пациентах, 40 из них больны. Тест дал положительный результат у 50 пациентов, из них 32 действительно больны.</li>
+<li>Постройте таблицу TP, FP, FN, TN.</li>
+<li>Вычислите точность, полноту, F-меру (α = 0,5) и FPR.</li>
+<li>Объясните, что важнее для такого теста — точность или полнота — и почему.</li>
+<li>Выполните лабораторную работу B9 и сравните коэффициенты модели с выводами, которые можно сделать по графику остатков (A5, B14).</li>
+</ol>
+<p><strong>Ожидаемый результат:</strong> Таблица, четыре числовые характеристики, обоснованный вывод и результаты лабораторных работ.</p>
+<p><strong>Форма представления:</strong> Расчёты по шагам и скриншоты результатов R.</p>
+<details class='hint'><summary>Подсказка</summary><p>Пропустить больного пациента (FN) обычно опаснее, чем отправить здорового на дополнительное обследование (FP).</p></details>
+<h3>Лабораторная работа A5. Моделирование данных</h3>
+<p><strong>Цель: </strong>Изучить основы регрессионного анализа и моделирования данных.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. <strong>Линейная регрессия</strong></p>
+<h4><strong>Постройте линейную регрессионную модель, предсказывающую mpg на основе wt:</strong></h4>
+<pre><code class="language-r">model &lt;- lm(mpg ~ wt, data = mtcars)
+summary(model)</code></pre>
+<h4>2. <strong>Оценка модели</strong></h4>
+<h4><strong>Постройте график остатков модели:</strong></h4>
+<pre><code class="language-r">plot(model, which = 1)</code></pre>
+<h4>3. <strong>Кластеризация</strong></h4>
+<h4><strong>Выполните кластеризацию данных с использованием алгоритма k-means для переменных</strong></h4>
+<p>mpg и wt:</p>
+<pre><code class="language-r">kmeans_result &lt;- kmeans(mtcars[, c("mpg", "wt")], centers = 3)
+mtcars$cluster &lt;- kmeans_result$cluster
+ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cluster))) + geom_point() + labs(title = "Кластеризация данных")</code></pre>
+<h3>Лабораторная работа B9. Линейная регрессия</h3>
+<p><strong>Цель: </strong>Выполнить линейную регрессию и интерпретировать результаты.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. Постройте линейную регрессионную модель, предсказывающую Sepal.Length на основе</p>
+<p>Petal.Length.</p>
+<pre><code class="language-r">model &lt;- lm(Sepal.Length ~ Petal.Length, data = iris)
+summary(model)</code></pre>
+<p>2. Постройте график регрессионной линии.</p>
+<pre><code class="language-r">ggplot(iris, aes(x = Petal.Length, y = Sepal.Length)) + geom_point() +
+geom_smooth(method = "lm", se = FALSE) +
+labs(title = "Регрессионная линия: Sepal.Length ~ Petal.Length")</code></pre>
+<h3>Лабораторная работа B14. Оценка модели</h3>
+<p><strong>Цель: </strong>Оценить качество модели и интерпретировать результаты.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. Рассчитайте и визуализируйте остатки модели линейной регрессии.</p>
+<pre><code class="language-r">residuals &lt;- residuals(model)
+ggplot(data = data.frame(residuals), aes(x = residuals)) + geom_histogram(binwidth = 0.5) +
+labs(title = "Распределение остатков модели")</code></pre>
+<p>2. Постройте Q-Q график остатков.</p>
+<pre><code class="language-r">qqnorm(residuals)
+qqline(residuals)</code></pre>

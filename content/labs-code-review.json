@@ -1,0 +1,140 @@
+[
+ {
+  "lab": "A1",
+  "original": "z <- x + y print(z)",
+  "split": [
+   "z <- x + y",
+   "print(z)"
+  ]
+ },
+ {
+  "lab": "A2",
+  "original": "mtcars_clean$mpg <- mtcars_clean$mpg * 1.2 head(mtcars_clean)",
+  "split": [
+   "mtcars_clean$mpg <- mtcars_clean$mpg * 1.2",
+   "head(mtcars_clean)"
+  ]
+ },
+ {
+  "lab": "A3",
+  "original": "mean(mtcars$mpg) median(mtcars$mpg) sd(mtcars$mpg)",
+  "split": [
+   "mean(mtcars$mpg)",
+   "median(mtcars$mpg)",
+   "sd(mtcars$mpg)"
+  ]
+ },
+ {
+  "lab": "A3",
+  "original": "library(dplyr) mtcars_summary <- mtcars %>%",
+  "split": [
+   "library(dplyr)",
+   "mtcars_summary <- mtcars %>%"
+  ]
+ },
+ {
+  "lab": "A3",
+  "original": "summarise(mean_mpg = mean(mpg), count = n()) print(mtcars_summary)",
+  "split": [
+   "summarise(mean_mpg = mean(mpg), count = n())",
+   "print(mtcars_summary)"
+  ]
+ },
+ {
+  "lab": "A5",
+  "original": "model <- lm(mpg ~ wt, data = mtcars) summary(model)",
+  "split": [
+   "model <- lm(mpg ~ wt, data = mtcars)",
+   "summary(model)"
+  ]
+ },
+ {
+  "lab": "A5",
+  "original": "kmeans_result <- kmeans(mtcars[, c(\"mpg\", \"wt\")], centers = 3) mtcars$cluster <- kmeans_result$cluster",
+  "split": [
+   "kmeans_result <- kmeans(mtcars[, c(\"mpg\", \"wt\")], centers = 3)",
+   "mtcars$cluster <- kmeans_result$cluster"
+  ]
+ },
+ {
+  "lab": "B2",
+  "original": "data(iris) head(iris)",
+  "split": [
+   "data(iris)",
+   "head(iris)"
+  ]
+ },
+ {
+  "lab": "B4",
+  "original": "mean(iris$Sepal.Length) median(iris$Sepal.Length) sd(iris$Sepal.Length)",
+  "split": [
+   "mean(iris$Sepal.Length)",
+   "median(iris$Sepal.Length)",
+   "sd(iris$Sepal.Length)"
+  ]
+ },
+ {
+  "lab": "B6",
+  "original": "library(dplyr) iris_summary <- iris %>%",
+  "split": [
+   "library(dplyr)",
+   "iris_summary <- iris %>%"
+  ]
+ },
+ {
+  "lab": "B6",
+  "original": "summarise(mean_sepal_length = mean(Sepal.Length)) print(iris_summary)",
+  "split": [
+   "summarise(mean_sepal_length = mean(Sepal.Length))",
+   "print(iris_summary)"
+  ]
+ },
+ {
+  "lab": "B10",
+  "original": "kmeans_result <- kmeans(iris[, c(\"Sepal.Length\", \"Sepal.Width\")], centers = 3) iris$cluster <- kmeans_result$cluster",
+  "split": [
+   "kmeans_result <- kmeans(iris[, c(\"Sepal.Length\", \"Sepal.Width\")], centers = 3)",
+   "iris$cluster <- kmeans_result$cluster"
+  ]
+ },
+ {
+  "lab": "B11",
+  "original": "texts <- c(\"This is a sentence.\", \"This is another sentence.\") nchar(texts)",
+  "split": [
+   "texts <- c(\"This is a sentence.\", \"This is another sentence.\")",
+   "nchar(texts)"
+  ]
+ },
+ {
+  "lab": "B11",
+  "original": "words <- unlist(str_split(texts, \" \")) table(words)",
+  "split": [
+   "words <- unlist(str_split(texts, \" \"))",
+   "table(words)"
+  ]
+ },
+ {
+  "lab": "B12",
+  "original": "ts_data <- ts(cumsum(rnorm(100)), frequency = 12) plot(ts_data, main = \"Пример временного ряда\")",
+  "split": [
+   "ts_data <- ts(cumsum(rnorm(100)), frequency = 12)",
+   "plot(ts_data, main = \"Пример временного ряда\")"
+  ]
+ },
+ {
+  "lab": "B12",
+  "original": "decomposed_ts <- decompose(ts_data) plot(decomposed_ts)",
+  "split": [
+   "decomposed_ts <- decompose(ts_data)",
+   "plot(decomposed_ts)"
+  ]
+ },
+ {
+  "lab": "B14",
+  "original": "qqnorm(residuals) qqline(residuals)",
+  "split": [
+   "qqnorm(residuals)",
+   "qqline(residuals)"
+  ]
+ }
+]

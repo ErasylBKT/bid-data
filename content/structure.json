@@ -1,0 +1,780 @@
+{
+ "title_ru": "Анализ больших данных",
+ "title_kk": "Үлкен деректерді талдау",
+ "language": "ru",
+ "modules": [
+  {
+   "id": "m1",
+   "title_ru": "Основы больших данных и бизнес-аналитики",
+   "title_kk": "Үлкен деректер мен бизнес-аналитика негіздері",
+   "blocks": [
+    {
+     "id": "b1.1",
+     "title_ru": "Понятие больших данных",
+     "title_kk": "Үлкен деректер ұғымы",
+     "lessons": [
+      {
+       "id": "l01",
+       "number": 1,
+       "title_ru": "Введение в большие данные",
+       "title_kk": "Үлкен деректерге кіріспе",
+       "sources": [
+        "lecture-01",
+        "practice-01"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/01/theory.html",
+         "chars": 4937,
+         "images": 1
+        },
+        "examples": {
+         "file": "lessons/01/examples.html",
+         "chars": 1709,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/01/tasks.html",
+         "chars": 1562,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/01/questions.json",
+         "count": 6
+        },
+        "tests": {
+         "file": "lessons/01/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l02",
+       "number": 2,
+       "title_ru": "Аналитика данных",
+       "title_kk": "Деректер аналитикасы",
+       "sources": [
+        "lecture-02",
+        "practice-02"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/02/theory.html",
+         "chars": 1683,
+         "images": 2
+        },
+        "examples": {
+         "file": "lessons/02/examples.html",
+         "chars": 9557,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/02/tasks.html",
+         "chars": 1278,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/02/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/02/tests.json",
+         "count": 10
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "b1.2",
+     "title_ru": "Бизнес-аналитика (BI) и OLAP",
+     "title_kk": "Бизнес-аналитика (BI) және OLAP",
+     "lessons": [
+      {
+       "id": "l03",
+       "number": 3,
+       "title_ru": "Жизненный цикл аналитики данных",
+       "title_kk": "Деректер аналитикасының өмірлік циклі",
+       "sources": [
+        "lecture-03",
+        "practice-04"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/03/theory.html",
+         "chars": 13095,
+         "images": 0
+        },
+        "examples": {
+         "file": "lessons/03/examples.html",
+         "chars": 1572,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/03/tasks.html",
+         "chars": 1307,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/03/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/03/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l04",
+       "number": 4,
+       "title_ru": "Компоненты аналитики MS SQL Server",
+       "title_kk": "MS SQL Server аналитика компоненттері",
+       "sources": [
+        "lecture-04",
+        "practice-03"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/04/theory.html",
+         "chars": 3773,
+         "images": 0
+        },
+        "examples": {
+         "file": "lessons/04/examples.html",
+         "chars": 5615,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/04/tasks.html",
+         "chars": 1283,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/04/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/04/tests.json",
+         "count": 10
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "title_ru": "Технологии хранения и обработки больших данных",
+   "title_kk": "Үлкен деректерді сақтау және өңдеу технологиялары",
+   "blocks": [
+    {
+     "id": "b2.1",
+     "title_ru": "Hadoop и MapReduce",
+     "title_kk": "Hadoop және MapReduce",
+     "lessons": [
+      {
+       "id": "l05",
+       "number": 5,
+       "title_ru": "Высокопроизводительные вычисления. Hadoop",
+       "title_kk": "Жоғары өнімді есептеулер. Hadoop",
+       "sources": [
+        "lecture-05",
+        "practice-05"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/05/theory.html",
+         "chars": 9176,
+         "images": 1
+        },
+        "examples": {
+         "file": "lessons/05/examples.html",
+         "chars": 2979,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/05/tasks.html",
+         "chars": 1352,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/05/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/05/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l06",
+       "number": 6,
+       "title_ru": "Hadoop MapReduce 1.0 и 2.0",
+       "title_kk": "Hadoop MapReduce 1.0 және 2.0",
+       "sources": [
+        "lecture-06",
+        "practice-06"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/06/theory.html",
+         "chars": 6859,
+         "images": 1
+        },
+        "examples": {
+         "file": "lessons/06/examples.html",
+         "chars": 1340,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/06/tasks.html",
+         "chars": 1231,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": "lessons/06/selfcheck.html",
+         "chars": 743,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/06/questions.json",
+         "count": 6
+        },
+        "tests": {
+         "file": "lessons/06/tests.json",
+         "count": 10
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "b2.2",
+     "title_ru": "NoSQL базы данных",
+     "title_kk": "NoSQL дерекқорлары",
+     "lessons": [
+      {
+       "id": "l07",
+       "number": 7,
+       "title_ru": "Масштабирование и многоуровневое хранение данных",
+       "title_kk": "Масштабтау және деректерді көпдеңгейлі сақтау",
+       "sources": [
+        "lecture-07",
+        "practice-07"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/07/theory.html",
+         "chars": 12556,
+         "images": 4
+        },
+        "examples": {
+         "file": "lessons/07/examples.html",
+         "chars": 1633,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/07/tasks.html",
+         "chars": 1317,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/07/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/07/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l08",
+       "number": 8,
+       "title_ru": "MongoDB",
+       "title_kk": "MongoDB",
+       "sources": [
+        "lecture-08",
+        "practice-08"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/08/theory.html",
+         "chars": 3988,
+         "images": 0
+        },
+        "examples": {
+         "file": "lessons/08/examples.html",
+         "chars": 1488,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/08/tasks.html",
+         "chars": 1193,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/08/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/08/tests.json",
+         "count": 10
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "title_ru": "Визуализация и интеллектуальный анализ данных",
+   "title_kk": "Деректерді визуализациялау және зияткерлік талдау",
+   "blocks": [
+    {
+     "id": "b3.1",
+     "title_ru": "Визуализация данных и язык R",
+     "title_kk": "Деректерді визуализациялау және R тілі",
+     "lessons": [
+      {
+       "id": "l09",
+       "number": 9,
+       "title_ru": "Визуализация данных и результатов анализа",
+       "title_kk": "Деректер мен талдау нәтижелерін визуализациялау",
+       "sources": [
+        "lecture-09",
+        "practice-09"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/09/theory.html",
+         "chars": 4340,
+         "images": 0
+        },
+        "examples": {
+         "file": "lessons/09/examples.html",
+         "chars": 915,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/09/tasks.html",
+         "chars": 930,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/09/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/09/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l10",
+       "number": 10,
+       "title_ru": "Графики и диаграммы",
+       "title_kk": "Графиктер мен диаграммалар",
+       "sources": [
+        "lecture-10",
+        "labs"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/10/theory.html",
+         "chars": 5787,
+         "images": 3
+        },
+        "examples": {
+         "file": "lessons/10/examples.html",
+         "chars": 1276,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/10/tasks.html",
+         "chars": 1805,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/10/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/10/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l11",
+       "number": 11,
+       "title_ru": "Типы данных",
+       "title_kk": "Деректер типтері",
+       "sources": [
+        "lecture-11",
+        "practice-10",
+        "practice-11",
+        "labs"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/11/theory.html",
+         "chars": 8715,
+         "images": 0
+        },
+        "examples": {
+         "file": "lessons/11/examples.html",
+         "chars": 1690,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/11/tasks.html",
+         "chars": 4161,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/11/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/11/tests.json",
+         "count": 10
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "b3.2",
+     "title_ru": "Интеллектуальный и статистический анализ",
+     "title_kk": "Зияткерлік және статистикалық талдау",
+     "lessons": [
+      {
+       "id": "l12",
+       "number": 12,
+       "title_ru": "Классификация задач анализа данных",
+       "title_kk": "Деректерді талдау есептерінің жіктелуі",
+       "sources": [
+        "lecture-12",
+        "practice-12",
+        "labs"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/12/theory.html",
+         "chars": 8751,
+         "images": 1
+        },
+        "examples": {
+         "file": "lessons/12/examples.html",
+         "chars": 1038,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/12/tasks.html",
+         "chars": 1198,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": "lessons/12/selfcheck.html",
+         "chars": 287,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/12/questions.json",
+         "count": 6
+        },
+        "tests": {
+         "file": "lessons/12/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l13",
+       "number": 13,
+       "title_ru": "Статистические методы анализа данных",
+       "title_kk": "Деректерді талдаудың статистикалық әдістері",
+       "sources": [
+        "lecture-13",
+        "practice-13",
+        "labs"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/13/theory.html",
+         "chars": 10750,
+         "images": 0
+        },
+        "examples": {
+         "file": "lessons/13/examples.html",
+         "chars": 1461,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/13/tasks.html",
+         "chars": 2473,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/13/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/13/tests.json",
+         "count": 10
+        }
+       }
+      }
+     ]
+    },
+    {
+     "id": "b3.3",
+     "title_ru": "Классификация и кластеризация",
+     "title_kk": "Жіктеу және кластерлеу",
+     "lessons": [
+      {
+       "id": "l14",
+       "number": 14,
+       "title_ru": "Метрический классификатор",
+       "title_kk": "Метрикалық классификатор",
+       "sources": [
+        "lecture-14",
+        "labs"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/14/theory.html",
+         "chars": 4086,
+         "images": 0
+        },
+        "examples": {
+         "file": "lessons/14/examples.html",
+         "chars": 1400,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/14/tasks.html",
+         "chars": 2401,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/14/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/14/tests.json",
+         "count": 10
+        }
+       }
+      },
+      {
+       "id": "l15",
+       "number": 15,
+       "title_ru": "Алгоритм K-means",
+       "title_kk": "K-means алгоритмі",
+       "sources": [
+        "lecture-15",
+        "practice-14",
+        "practice-15",
+        "labs"
+       ],
+       "elements": {
+        "theory": {
+         "file": "lessons/15/theory.html",
+         "chars": 5703,
+         "images": 6
+        },
+        "examples": {
+         "file": "lessons/15/examples.html",
+         "chars": 1717,
+         "images": 0
+        },
+        "tasks": {
+         "file": "lessons/15/tasks.html",
+         "chars": 1292,
+         "images": 0
+        },
+        "selfcheck": {
+         "file": null,
+         "chars": 0,
+         "images": 0
+        },
+        "questions": {
+         "file": "lessons/15/questions.json",
+         "count": 5
+        },
+        "tests": {
+         "file": "lessons/15/tests.json",
+         "count": 10
+        }
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "labs": [
+  {
+   "id": "A1",
+   "title": "Введение в RStudio",
+   "lesson": 11
+  },
+  {
+   "id": "A2",
+   "title": "Обработка данных",
+   "lesson": 11
+  },
+  {
+   "id": "A3",
+   "title": "Анализ данных",
+   "lesson": 13
+  },
+  {
+   "id": "A4",
+   "title": "Визуализация данных",
+   "lesson": 10
+  },
+  {
+   "id": "A5",
+   "title": "Моделирование данных",
+   "lesson": 14
+  },
+  {
+   "id": "B1",
+   "title": "Основы работы с RStudio",
+   "lesson": 11
+  },
+  {
+   "id": "B2",
+   "title": "Работа с данными",
+   "lesson": 11
+  },
+  {
+   "id": "B3",
+   "title": "Очистка данных",
+   "lesson": 11
+  },
+  {
+   "id": "B4",
+   "title": "Основные статистики",
+   "lesson": 13
+  },
+  {
+   "id": "B5",
+   "title": "Визуализация данных",
+   "lesson": 10
+  },
+  {
+   "id": "B6",
+   "title": "Сводные таблицы",
+   "lesson": 11
+  },
+  {
+   "id": "B7",
+   "title": "Фильтрация и сортировка данных",
+   "lesson": 11
+  },
+  {
+   "id": "B8",
+   "title": "Работа с датами",
+   "lesson": 11
+  },
+  {
+   "id": "B9",
+   "title": "Линейная регрессия",
+   "lesson": 14
+  },
+  {
+   "id": "B10",
+   "title": "Кластеризация",
+   "lesson": 15
+  },
+  {
+   "id": "B11",
+   "title": "Работа с текстовыми данными",
+   "lesson": 12
+  },
+  {
+   "id": "B12",
+   "title": "Временные ряды",
+   "lesson": 13
+  },
+  {
+   "id": "B13",
+   "title": "Корреляция и ковариация",
+   "lesson": 13
+  },
+  {
+   "id": "B14",
+   "title": "Оценка модели",
+   "lesson": 14
+  }
+ ]
+}

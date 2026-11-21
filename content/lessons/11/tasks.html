@@ -1,0 +1,101 @@
+<h3>Задание 1. Схема хранения данных в Amazon S3</h3>
+<p><strong>Цель:</strong> Применить понятия бакета, ключа, региона, версионирования и дедупликации.</p>
+<p><strong>Порядок выполнения:</strong></p><ol>
+<li>Университет хранит в S3 видеолекции (по 2–8 ГБ), сканы документов и еженедельные резервные копии базы данных.</li>
+<li>Предложите структуру бакетов и пример ключей объектов, имитирующих иерархию (например, «2025/ИС/lecture-01.mp4»).</li>
+<li>Укажите, для каких объектов нужна многокомпонентная загрузка и почему.</li>
+<li>Решите, для каких данных применять дедупликацию — онлайн или оффлайн — и обоснуйте выбор.</li>
+<li>Объясните, как версионирование поможет при случайном удалении файла.</li>
+</ol>
+<p><strong>Ожидаемый результат:</strong> Схема бакетов с примерами ключей и обоснованные решения по загрузке, дедупликации и версионированию.</p>
+<p><strong>Форма представления:</strong> Схема (дерево бакетов и ключей) и пояснения списком.</p>
+<details class='hint'><summary>Подсказка</summary><p>Ключи уникальны внутри бакета, их длина — до 1024 байт в UTF-8.</p></details>
+<h3>Лабораторная работа A1. Введение в RStudio</h3>
+<p><strong>Цель: </strong>Ознакомиться с интерфейсом RStudio, базовыми операциями и командами в R.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. <strong>Запуск и знакомство с RStudio</strong></p>
+<p>Откройте RStudio и изучите основные панели: консоль, скрипты, среды и графики.</p>
+<h4>2. <strong>Работа с консолью</strong></h4>
+<h4><strong>Введите следующие команды в консоли и проанализируйте результаты:</strong></h4>
+<pre><code class="language-r">1 + 1
+sqrt(16)</code></pre>
+<h4>3. <strong>Создание и сохранение скрипта</strong></h4>
+<h4><strong>Создайте новый R скрипт (File -&gt; New File -&gt; R Script). Напишите и сохраните следующий код:</strong></h4>
+<pre><code class="language-r">x &lt;- 10
+y &lt;- 20
+z &lt;- x + y
+print(z)</code></pre>
+<h4>4. <strong>Использование функций справки</strong></h4>
+<h4><strong>Получите справочную информацию о функции mean():</strong></h4>
+<pre><code class="language-r">?mean</code></pre>
+<h4>5. <strong>Работа с переменными</strong></h4>
+<h4><strong>Создайте переменную a и присвойте ей значение 5. Затем измените значение a на 10 и выведите его:</strong></h4>
+<pre><code class="language-r">a &lt;- 5
+a &lt;- 10
+print(a)</code></pre>
+<h3>Лабораторная работа A2. Обработка данных</h3>
+<p><strong>Цель: </strong>Научиться загружать, очищать и предобрабатывать данные.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. <strong>Загрузка данных</strong></p>
+<h4><strong>Загрузите набор данных mtcars и просмотрите его:</strong></h4>
+<pre><code class="language-r">data(mtcars)
+head(mtcars)</code></pre>
+<h4>2. <strong>Очистка данных</strong></h4>
+<h4><strong>Удалите строки с пропущенными значениями (если есть):</strong></h4>
+<pre><code class="language-r">mtcars_clean &lt;- na.omit(mtcars)</code></pre>
+<h4>3. <strong>Создание нового столбца</strong></h4>
+<h4><strong>Добавьте новый столбец в mtcars, который будет содержать среднее значение всех числовых столбцов:</strong></h4>
+<pre><code class="language-r">mtcars_clean$mean_value &lt;- rowMeans(mtcars_clean[, sapply(mtcars_clean, is.numeric)])
+head(mtcars_clean)</code></pre>
+<h4>4. <strong>Изменение значений</strong></h4>
+<h4><strong>Измените значения в столбце mpg (милей на галлон) на 20% больше и выведите результат:</strong></h4>
+<pre><code class="language-r">mtcars_clean$mpg &lt;- mtcars_clean$mpg * 1.2
+head(mtcars_clean)</code></pre>
+<h3>Лабораторная работа B1. Основы работы с RStudio</h3>
+<p><strong>Цель: </strong>Ознакомиться с основами работы в RStudio.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. Откройте RStudio и исследуйте основные панели (Консоль, Скрипты, Графики, Среда).</p>
+<p>2. Создайте новый R-скрипт и выполните простые математические операции: сложение, вычитание, умножение и деление.</p>
+<p>3. Сохраните скрипт с расширением .R.</p>
+<h3>Лабораторная работа B2. Работа с данными</h3>
+<p><strong>Цель: </strong>Загрузить и просмотреть набор данных.</p>
+<h4><strong>Задания:</strong></h4>
+<h4>1. <strong>Загрузите встроенный набор данных iris и выведите его на экран.</strong></h4>
+<pre><code class="language-r">data(iris)
+head(iris)</code></pre>
+<h4>2. <strong>Сохраните набор данных iris в CSV-файл.</strong></h4>
+<pre><code class="language-r">write.csv(iris, "iris_data.csv", row.names = FALSE)</code></pre>
+<h3>Лабораторная работа B3. Очистка данных</h3>
+<p><strong>Цель: </strong>Научиться очищать данные и обрабатывать пропуски.</p>
+<br/>
+<h4><strong>Задания:</strong></h4>
+<h4>1. <strong>Создайте набор данных с пропущенными значениями.</strong></h4>
+<pre><code class="language-r">data_with_na &lt;- data.frame(
+A = c(1, 2, NA, 4),
+B = c(NA, 2, 3, 4)
+)</code></pre>
+<h4>2. <strong>Заполните пропущенные значения средними значениями.</strong></h4>
+<pre><code class="language-r">data_with_na[is.na(data_with_na)] &lt;- sapply(data_with_na, function(x) mean(x, na.rm = TRUE))</code></pre>
+<h3>Лабораторная работа B6. Сводные таблицы</h3>
+<p><strong>Цель: </strong>Создать сводные таблицы для анализа данных.</p>
+<br/>
+<h4><strong>Задания:</strong></h4>
+<h4><strong>1. Создайте сводную таблицу, которая показывает среднее значение переменной Sepal.Length по группам из переменной Species.</strong></h4>
+<pre><code class="language-r">library(dplyr)
+iris_summary &lt;- iris %&gt;%
+group_by(Species) %&gt;%
+summarise(mean_sepal_length = mean(Sepal.Length))
+print(iris_summary)</code></pre>
+<h3>Лабораторная работа B7. Фильтрация и сортировка данных</h3>
+<p><strong>Цель: </strong>Научиться фильтровать и сортировать данные.</p>
+<h4><strong>Задания:</strong></h4>
+<p>1. Отфильтруйте строки набора данных iris, где Sepal.Length больше 5.5.</p>
+<pre><code class="language-r">filtered_iris &lt;- iris %&gt;% filter(Sepal.Length &gt; 5.5)</code></pre>
+<p>2. Отсортируйте данные по убыванию переменной Sepal.Length.</p>
+<pre><code class="language-r">sorted_iris &lt;- iris %&gt;% arrange(desc(Sepal.Length))</code></pre>
+<h3>Лабораторная работа B8. Работа с датами</h3>
+<p><strong>Цель: </strong>Научиться работать с датами в R.</p>
+<h4><strong>Задания:</strong></h4>
+<h4><strong>1. Создайте вектор дат и найдите разницу между двумя датами.</strong></h4>
+<pre><code class="language-r">dates &lt;- as.Date(c("2023-01-01", "2024-01-01"))
+diff &lt;- difftime(dates[2], dates[1], units = "days")</code></pre>

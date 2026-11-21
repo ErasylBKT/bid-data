@@ -1,0 +1,410 @@
+{
+ "pages": [
+  {
+   "id": "home",
+   "title": "Анализ БД",
+   "heading": "Анализ больших данных",
+   "chars": 553,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lectures-index",
+   "title": "Анализ БД",
+   "heading": "Анализ больших данных",
+   "chars": 553,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-01",
+   "title": "Анализ БД - Лекция 1",
+   "heading": "Лекция №1. Введение в большие данные",
+   "chars": 3547,
+   "images": 1,
+   "tables": 0
+  },
+  {
+   "id": "lecture-02",
+   "title": "Анализ БД - Лекция 2",
+   "heading": "Лекция 2. Аналитика данных",
+   "chars": 1714,
+   "images": 2,
+   "tables": 0
+  },
+  {
+   "id": "lecture-03",
+   "title": "Анализ БД - Лекция 3",
+   "heading": "Лекция 3.  Жизненный цикл аналитики данных",
+   "chars": 10077,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-04",
+   "title": "Анализ БД - Лекция 4",
+   "heading": "Лекция 4. Компоненты аналитики MS SQL server",
+   "chars": 3827,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-05",
+   "title": "Анализ БД - Лекция 5",
+   "heading": "Лекция 5",
+   "chars": 9421,
+   "images": 1,
+   "tables": 0
+  },
+  {
+   "id": "lecture-06",
+   "title": "Анализ БД - Лекция 6",
+   "heading": "Лекция 6",
+   "chars": 3203,
+   "images": 1,
+   "tables": 0
+  },
+  {
+   "id": "lecture-07",
+   "title": "Анализ БД - Лекция 7",
+   "heading": "Лекция 7",
+   "chars": 8447,
+   "images": 4,
+   "tables": 0
+  },
+  {
+   "id": "lecture-08",
+   "title": "Анализ БД - Лекция 8",
+   "heading": "Лекция 8. MongoDB",
+   "chars": 1658,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-09",
+   "title": "Анализ БД - Лекция 9",
+   "heading": "Лекция 9.  Визуализация данных и",
+   "chars": 3606,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-10",
+   "title": "Анализ БД - Лекция 10",
+   "heading": "Лекция 10. Графики и диаграммы",
+   "chars": 5792,
+   "images": 3,
+   "tables": 0
+  },
+  {
+   "id": "lecture-11",
+   "title": "Анализ БД - Лекция 11",
+   "heading": "Лекция 11. Типы данных",
+   "chars": 1643,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-12",
+   "title": "Анализ БД - Лекция 12",
+   "heading": "Лекция 12. Классификация задач анализа данных",
+   "chars": 9189,
+   "images": 1,
+   "tables": 0
+  },
+  {
+   "id": "lecture-13",
+   "title": "Анализ БД - Лекция 13",
+   "heading": "Лекция 13",
+   "chars": 11241,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-14",
+   "title": "Анализ БД - Лекция 14",
+   "heading": "Лекция 14",
+   "chars": 4651,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "lecture-15",
+   "title": "Анализ БД - Лекция 15",
+   "heading": "Лекция 15",
+   "chars": 2820,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-index",
+   "title": "Анализ БД - Практика",
+   "heading": "Анализ больших данных",
+   "chars": 21,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-01",
+   "title": "Анализ БД - Практика 1",
+   "heading": "Характеристики Big Data",
+   "chars": 1452,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-02",
+   "title": "Анализ БД - Практика 2",
+   "heading": "Big data для операторов связи",
+   "chars": 7993,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-03",
+   "title": "Анализ БД - Практика 3",
+   "heading": "Пример многомерного куба",
+   "chars": 4213,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-04",
+   "title": "Анализ БД - Практика 4",
+   "heading": "Построение модели",
+   "chars": 3070,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-05",
+   "title": "Анализ БД - Практика 5",
+   "heading": "Примеры применения MapReduce",
+   "chars": 1607,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-06",
+   "title": "Анализ БД - Практика 6",
+   "heading": "Варианты использования Hadoop",
+   "chars": 4545,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-07",
+   "title": "Анализ БД - Практика 7",
+   "heading": "Основы NoSQL",
+   "chars": 4182,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-08",
+   "title": "Анализ БД - Практика 8",
+   "heading": "Сравнение NoSQL с базой данных",
+   "chars": 2699,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-09",
+   "title": "Анализ БД - Практика 9",
+   "heading": "Характеристики Big Data",
+   "chars": 6707,
+   "images": 3,
+   "tables": 0
+  },
+  {
+   "id": "practice-10",
+   "title": "Анализ БД - Практика 10",
+   "heading": "Язык R",
+   "chars": 2134,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-11",
+   "title": "Анализ БД - Практика 11",
+   "heading": "Многокомпонентная загрузка",
+   "chars": 4981,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-12",
+   "title": "Анализ БД - Практика 12",
+   "heading": "Типы Data Mining",
+   "chars": 7741,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-13",
+   "title": "Анализ БД - Практика 13",
+   "heading": "Машинное обучение",
+   "chars": 4028,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "practice-14",
+   "title": "Анализ БД - Практика 14",
+   "heading": "Кластерный анализ",
+   "chars": 1922,
+   "images": 6,
+   "tables": 0
+  },
+  {
+   "id": "practice-15",
+   "title": "Анализ БД - Практика 15",
+   "heading": "Поиск ассоциативных правил",
+   "chars": 2070,
+   "images": 0,
+   "tables": 0
+  },
+  {
+   "id": "labs",
+   "title": "Анализ БД - Лабы",
+   "heading": "Лабы",
+   "chars": 9468,
+   "images": 0,
+   "tables": 0
+  }
+ ],
+ "images": [
+  {
+   "page": "lecture-01",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQe2mtLM98NZa0d7ZDrNIeU6jkrzE6uOVBh_TY5yrrIXq8UmcxZMoO3hIe2N5iiCR9kW0mCm0YzEcNVk9PVQHTkl5ob-UQMir273wIpfPQoyosxF-WPWIjW4ghjz7iI_wybPI64BiBBopwHJnNZ4M1Qu2uO8RsH0ZMVa6eY8aGbbm1B-dhOG2PbL_bdDrs5qOwR8MWqEeylPreQ2-f8vvSJXCorP-LVwDgt6GYVcOUU=w1280",
+   "local": "images/lecture-01-01.jpg"
+  },
+  {
+   "page": "lecture-02",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQfRl5XZ9YS2GH0Az2MANnU9rH9dysAVIfe_T4mAuO1sIT2Rlc5fATYtZzqj70A1cLxIe4zTnC1YLRLotgtwzwz4ZXPhA8ccW5gey0ZVgV5fhjWdWwsNG2aBApf3u35hlv5gmdIpfLvxUPRAlLkuCx_jEUcoMAuAmPqIEMLODiwcPewsF-FjlVCSQLMavvH3-vFZ-ZHKwzkcHk-cdTVA8ZyDoAEYluEybjYvSAZ3YEk=w1280",
+   "local": "images/lecture-02-01.png"
+  },
+  {
+   "page": "lecture-02",
+   "n": 2,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQd4kYq9gWUaCmXqUo-Huc4hzXDWPVXA5U3VxlWMo5G5IrNq-tNhL_xaHncVMA9_VZURCbpQmGZI488_hzE-WZgTWWs4o2CzNw-4wAB513dm7-x5pB6q5e6faEdf7x7rKHbr5kow20DhFe-Llvlwd-GJAjVo6Fk8Ow-vlkN_WsLGv3BQh77jY-zPB0Nn5BNc1vvd6rXoKga5ErMG-0lyZ7Y6ztYilAOmXvCH6XOMY2g=w1280",
+   "local": "images/lecture-02-02.png"
+  },
+  {
+   "page": "lecture-05",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQfv9SKFGcb6oXd_Nh_ysyz70G3qonfGJix4XlXI6U0fEKp-KxDX-MkB6enA27g7pzGMSMnYP5we7rjg1B0vLtB1yrrudDvX3IIWjQPTn0njG0zESLvCnd4tDjGcUDjXWDRc0VfQIhrh0oPb6DRoaXsPSSoGD0opXLwFY3mFAwIw6JZwzKq6TDMv9-URMh9gw8juMc6afQfXr-Cf5DN3qrFPZuDsy25SB2o8-Rl8D8I=w1280",
+   "local": "images/lecture-05-01.png"
+  },
+  {
+   "page": "lecture-06",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQdBYRYhde1hrfxs7OgDqiFzKvJRG_I0Ect7n-WPdwoREs-ekDvtQVkEtUv-oI2jEU25eXq-U-HCDYfyuQyWQvrGACUMa3ePENzMn1U4xBEgzbv4eNsr273MIC8LHsW-9qX8lCOO28JsM8imOfLtcABoldivNcgORNLU7l86oJ0OBUfx89WwHgmNidgAdP1puYiWNZHgowN4hCZizT4kNjCO0zvUIo9rDz8ye-6C=w1280",
+   "local": "images/lecture-06-01.png"
+  },
+  {
+   "page": "lecture-07",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQeL8Ua8-fXrnol1zalKPmF7HnD4qe0i38ooqgfo36IxSLyq9J3pC6osSdhAOT07WHRwfmwe2qzC4E2glByxhy6x6sUdwFswIoENU9axYMpNqD0anmPIRYp5GM46OoBSkKVKhZvbTk4wdFexTFax0ns_VxwGHGtUyH8o7hXi4UQZ8OhQlwjZFmiDvCp_3-xOUnFCtmEm_TI06g4gWuzP2CGrAv155CmktfmLj0k21mY=w1280",
+   "local": "images/lecture-07-01.png"
+  },
+  {
+   "page": "lecture-07",
+   "n": 2,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQcMkqHBLwVHGA8Qsiym7s2OPVQ_VSoCdO7sOGd4iC4mqiEfmCcb-5ThfnEa71uIDciytNTSbEi3JOXVkLZde-W6ERLM99ggZTBnw_Y467WcaoKs_mLMzbCdMsk16zk4D04G16S3IEo5onY9iCsc7GsCI7JJu__t5EiGfn9fPqU7GpD9rPpquIHlZiM8SjWvCwBLbFld84P7uD76zEv8GCQ_TzmrMU9GqG6CgG_YjAI=w1280",
+   "local": "images/lecture-07-02.png"
+  },
+  {
+   "page": "lecture-07",
+   "n": 3,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQf09aA8_a_yxq6Dt6mimlYC1InjO6o06MwcLankD55825Bu5UY7bOn72B_Wd3f9gcakgKKg1coIogP4vdGq9H0GikVPxXwu3A47pNW5Q0QpCnV6oCDZITzn49AMx7_zd7_K8PsdVFCAt0jXJT5IYWQTLB6DqnDo4BuAmVR6mnOOf1wqicAlkIi6DjKHAejKVTY1v93IhP9jgr1hzM1CNfqrYt2bvueMAEgY9sj9txY=w1280",
+   "local": "images/lecture-07-03.png"
+  },
+  {
+   "page": "lecture-07",
+   "n": 4,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQckX3AQPo7DWP31rRHYbhu79fmXSe8iTIhSxTU2hCKstI6Ubk8NdzHNv7VRG-rfLyYWSXW1F98mjVpSXZEwwRkYYdWUjgmwgUK2cvfpZBuTANBA9GAR0xvakC8JSqwVWRaJCC6BuwQuF5_FdusgVMapvxwsZPXhzddEp4jTEasELkQunPdRy74Kgx9309gT664Nu8-nvU82NiHGTAsLiUL7XDteSoTsjFWfuAMwmyM=w1280",
+   "local": "images/lecture-07-04.png"
+  },
+  {
+   "page": "lecture-10",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQdYe_b9I4yXNQduPUoQioxXpCEjeinMqZ_peLqH3jckEI9eA3agzYMnCpwhJanVrtcTg2pvsv1WWHzXheKVFYZpcZSWQsJlCryaoYs_n_j5Vs61dK9Gn29zURS1Jj70RnMUBz6whNyscmeZ4I3Ds-Gz1hl8MkS8yFqiao2JQ3fa9MoqKV21DpekibAkHulIT0gOs5IQ3reQ3UWxMlcHBebK0Sk1SKxlUCgY5bmsrUA=w1280",
+   "local": "images/lecture-10-01.png"
+  },
+  {
+   "page": "lecture-10",
+   "n": 2,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQcfoiQ9JAinU_wdacwIowEbZcVh1HGIZcaUh81mH2RV42QABKlUFwV5tq_PDx_NbDSb_ar2aPR9Q-6T29th823xSgSM1frr36KOAtjIA6Dg7Vrr5JhCQXyexYC8wODXPGEp7b3caWmmH1hb4Ofoeb2Vv-1yqYIaktclQzqEiE8ffbKvJcguk3ZUKfehUyxvRYXKQcPtCSSGWe-BLQJair-r9rficCzr09MSlcHI=w1280",
+   "local": "images/lecture-10-02.png"
+  },
+  {
+   "page": "lecture-10",
+   "n": 3,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQepAw9c8bYD7y_EFrnpmHAOEM4a7Zc9fUlKJ2CUIi6zu2S9mtC_Q5TnPkPSgii1Q5lQngA0xxftX5O4Eq_cI5_WVqPWbiNoXLrixJbLIaLI5NetZv4po5WbYhSuOhuyiyGOzFC6hd65KVqzTrYdiWEa_sa0kEohCGBIT4WiAmHWhdVnVXLS5LyJSTZit7DcdybtOwN3RBsP70IQnnw4FB9jAXP4_SkoUIXk47KGwp4=w1280",
+   "local": "images/lecture-10-03.png"
+  },
+  {
+   "page": "lecture-12",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQeO-LHceuoQXEt-6U8ybsu9iY03mbPqLX7hs17hZhG57_pZ-luNmU7DIFaL9J4h_IU0wvWASQ8_MwftL12MfkmC_rgDgCWnHY-lz-qnhLs-vrPd84zaUbcmaxOmVLb3vWovVtDZnwr8rG52vTyo9YjDHheQO8cXzMC0C7M_HMCWRotUSbUkW9rXgQ=w1280",
+   "local": "images/lecture-12-01.png"
+  },
+  {
+   "page": "practice-09",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQcuIDbaYHvQLHkIXqmXLEz8UKuo50V-MhvgHxDYxuzh6ZOIB8LZh3IaZJNcMy2z6iopkVDHld-_JoS-g6jYBbjrExey6WpfV_fRdKne88h3URjkXz0ygalURkYb6WB_xxkoFZ0weHn67BAGGkO3p53K_i0iD8_IAzukD-0akQ3FW_ZOnPDGURW05hkledmoT4k3tb2zg54hv8WVaXWlwCdvQ8hKBMVnJSN5dRjy=w1280",
+   "local": "images/practice-09-01.png"
+  },
+  {
+   "page": "practice-09",
+   "n": 2,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQfrjku85XHVfQ_1EAJaVQCNkyp9rvD88sFk8K0TeqCwPGHb7askc_I1ile979uBBjslbLYVk3vFQvbDVcd1qMJZxfkwmPGQhE97f5EclDo5Ucl8R-LX-0CAwkAsga1Xppp2YHLEbQGVxJ6gIRtNlea3zn077cGW78nYWzp5cNICpsIcH-KSgRggIHh_tB2ZvSzLd854WQpSup7k1DM4DfYj-M2dvpuGI6UxF-qf=w1280",
+   "local": "images/practice-09-02.png"
+  },
+  {
+   "page": "practice-09",
+   "n": 3,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQfi7I5juL054HBuw3-H3xjt3W3rx-zh23rMl-Ff_-XeEe2F9H7De8C_QxY0Ilow-vwN9oXgZ36iM3HwA_vZVqHFft0k4-WNOnIJ4nzQ1ixMR7pmQJDnbWCd6Bw2gl9n33Xxxhk5LrkYyoIlFRltqt0zfBp3aOAOTiJSDHOkJJ35Wl2koYXIVd17jCNMoSJbhdO4CQK5WGNn4XKna3sRBY-NI3bCbCY3_OvjAGlgv-Q=w1280",
+   "local": "images/practice-09-03.png"
+  },
+  {
+   "page": "practice-14",
+   "n": 1,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQfx05hG_ogr1i-jIeW0DQrwSttrM7nIlt4Yyd5sMB56wRTl3c8lFGauzOTCghAkYl9oyJEYBoPFf-kRi2m16HrW-D_8bH0OabEzpuf82J9vGz-L6-G2f5Ij3LEHhjdm2ifCCUL8BXm4bbjy0eqUO5f6DGwIRnUXnb7au90H_Vic9FuGTCdOTAHfCub93mmq1-_rA0rCclL5dMhaTYyNvyh3rkAyACmm_EzVF6o0Rms=w1280",
+   "local": "images/practice-14-01.jpg"
+  },
+  {
+   "page": "practice-14",
+   "n": 2,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQfHf3q72bIJFLvp0717_KHoVo3-4RWKbHELfaU_E6n_QcXzccyBOoVOauwDL0vYlWQw-pJ952nMfhhijcPE98m06F9OTsgHBgKMJKfDbF6qt5z6Kzyo3Vrbi0y369N_Q_yAynMjLLjVgNWVe24kzgcZUvKwjHyKa5QNz-GDu6lGqQFrGwta0HiTD1iFkTo1KAtY0D98J3z6m-cILxgu4y94ofS_p6mOapdwhAzbiXI=w1280",
+   "local": "images/practice-14-02.jpg"
+  },
+  {
+   "page": "practice-14",
+   "n": 3,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQd6EJSdJcyG6p7Z_WKq1dxLx7gUhibALPW5hjKObYQ9ia8HGfSo7eF3iV_M5tkoQz61cTrBXo230fcZoSGhdbFqT-Aq2kwSHo6f4SOBAJnl7bipGlxUwoVT3Fqtye807KlnollycxK8qc2Fz2L13k6cOsBGstW2TiGeT9cx72uWyx27VouAi83bi07pztaEaEmeRmiDz_KkN8Prk9fVnZBNGnxBcS_o1jV4AiEhCBE=w1280",
+   "local": "images/practice-14-03.jpg"
+  },
+  {
+   "page": "practice-14",
+   "n": 4,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQf7uLn59Rtpy5De76YVlEkZ68RLpg4-0Jr0pNpw46CPOQXIylrPMrtkPzCmn0-idBbd75gs0EHhirpRRxuPkJguAl25jU0ZaNKZfhVyoRJXMoKF4j4QQPcSCz2CCBvKgUoySxuGBbNhRa91kow93imXCBIY6Tx4SXJE2JFosPwbcn_QPT-riQqOum1uVCx2_yDvpdHe6zEh7__SZLYrdZB0VErcG8dWAOSVTy3XQts=w1280",
+   "local": "images/practice-14-04.jpg"
+  },
+  {
+   "page": "practice-14",
+   "n": 5,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQcY2NV6em1HYJA_pXQr-wnEqo81TfHgAmnf3vXb0kTYycbdvsFLbr0W7dkRwG40aauldemx0CnuwIWiKmbS0MYqktdHK1A3MPJZ6-lOc0YnAsOwuAhjO2guHZFjXhFgKAhN9mrEjE6yXzmh00XSadskF1lv-8yFJYHlhzJnh6FHaV7B2C_t3yY33zOmhTiHnRokhQQbU7cPkZDRNvOI-sLlTrtoZH20kxqg7KC3=w1280",
+   "local": "images/practice-14-05.jpg"
+  },
+  {
+   "page": "practice-14",
+   "n": 6,
+   "url": "https://sites.google.com/sitesv-images-rt/APXyLQepz_OCxyd6J4QSaWHS7a49dsS1jQRDudTglXvYWnGSedxUsz5qPPsbMLs2dHPdVon21xFgZ2IC5FQRs357amXXUm8ViAxPgcDLvO-57pRmJa1jy_cq0amhUKg5MB2szvSGU730ayrFY7Z5un-74zFmzBQA7gBTSzrUJUqJsjzKVRE2C1D0kuXyMpXew6xl6TYnydTIBXaAZFhQA1GEAw8FNNh3hnUAU990BPqp=w1280",
+   "local": "images/practice-14-06.jpg"
+  }
+ ]
+}

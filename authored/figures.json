@@ -1,0 +1,27 @@
+[
+ {"_comment": "Рисунки уроков. src — файл в images/. after — фрагмент текста, после абзаца (close, по умолчанию </p>) с которым ставится рисунок; без after существующее изображение получает подпись на своём месте. new: true — рисунок выполнен для пособия (в исходном сайте отсутствовал)."},
+
+ {"lesson": 1, "element": "theory", "src": "images/fig-1-2-three-v.svg", "new": true,
+  "after": "принцип «Трёх V» (рисунок 1.2).", "caption": "Рисунок 1.2 – Принцип «Трёх V»: Volume, Velocity, Variety"},
+
+ {"lesson": 2, "element": "theory", "src": "images/lecture-02-01.png", "caption": "Рисунок 1.8 – Источники данных, хранилища, обработка данных и генерация отчётов"},
+ {"lesson": 2, "element": "theory", "src": "images/lecture-02-02.png", "caption": "Рисунок 1.9 – Путь больших данных: данные → инфраструктура → приложения → значение для бизнеса"},
+
+ {"lesson": 5, "element": "theory", "src": "images/lecture-05-01.png",
+  "after": "логотипом системы Hadoop (рисунок 3.1).", "caption": "Рисунок 3.1 – Логотип Hadoop"},
+ {"lesson": 5, "element": "theory", "src": "images/fig-3-2-hdfs.svg", "new": true,
+  "after": "Name Node является управляющим узлом, а Data Node – управляемым.", "caption": "Рисунок 3.2 – Узлы кластера HDFS: Name Node и Data Node"},
+ {"lesson": 5, "element": "theory", "src": "images/fig-3-3-mapreduce.svg", "new": true,
+  "after": "Операции Map и Reduce могут выполняться распределённым образом.", "caption": "Рисунок 3.3 – Два этапа работы MapReduce (на примере подсчёта слов)"},
+ {"lesson": 5, "element": "examples", "src": "images/fig-3-4-hadoop-architecture.svg", "new": true,
+  "after": "Data Node: управляют данными, переданными на узел.", "close": "</ul>", "caption": "Рисунок 3.4 – Архитектура Hadoop: узлы Master и Slave"},
+
+ {"lesson": 6, "element": "theory", "src": "images/lecture-06-01.png", "caption": "Рисунок 3.5 – Архитектура Hadoop MapReduce 1.0"},
+ {"lesson": 6, "element": "theory", "src": "images/fig-3-6-yarn.svg", "new": true,
+  "after": "разделена между Application Master и Resource Manager (рисунок 3.6).", "caption": "Рисунок 3.6 – Архитектура Hadoop MapReduce 2.0 (YARN)"},
+
+ {"lesson": 7, "element": "theory", "src": "images/lecture-07-01.png", "caption": "Рисунок 4.1 – Репликация Master-Slave"},
+ {"lesson": 7, "element": "theory", "src": "images/lecture-07-02.png", "caption": "Рисунок 4.2 – Репликация Peer-to-peer"},
+ {"lesson": 7, "element": "theory", "src": "images/lecture-07-03.png", "caption": "Рисунок 4.3 – Шардинг"},
+ {"lesson": 7, "element": "theory", "src": "images/lecture-07-04.png", "caption": "Рисунок 4.4 – Теорема CAP"}
+]

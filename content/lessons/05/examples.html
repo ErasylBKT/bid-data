@@ -10,6 +10,7 @@
 <h3>Архитектура Hadoop</h3>
 <p>На каждом компьютере должны присутствовать два компонента (рисунок 3.4):</p>
 <ul><li><p>Task Tracker: выполняет маленькую вычислительную задачу на узле</p></li><li><p>Data Node: управляют данными, переданными на узел.</p></li></ul>
+<figure class="fig"><img src="images/fig-3-4-hadoop-architecture.svg" alt="Рисунок 3.4 – Архитектура Hadoop: узлы Master и Slave"/><figcaption>Рисунок 3.4 – Архитектура Hadoop: узлы Master и Slave</figcaption></figure>
 <p>Все маленькие компьютеры называют Slave. Также существует Master узел. Данный узел кроме Task Tracker и Data Node содержит ещё Job Tracker и Name Node. Task Tracker и Job Tracker являютсякомпонентами Mad Reduce, а Name Node и Data Node – HDFS. Роль и цель Job Tracker, которые исполняется на Master Node - это разбить большие задачи на маленькие кусочки и отправить каждую маленькую часть вычислений соответствующему Task Tracker на узле, которые в свою очередь, когда смогут закончить вычисления, отправят обратно информацию в Job Tracker, который объединит все результаты вычислений и отправит их обратно приложению.</p>
 
 <h3>Пример 9. Подсчёт слов с помощью MapReduce</h3>

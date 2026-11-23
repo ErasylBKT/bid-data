@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" width="780" height="420" font-family="Arial, Helvetica, sans-serif">
+  <title>Рисунок 3.4 – Архитектура Hadoop: Master и Slave узлы</title>
+  <defs>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3a6ea5"/></marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a8c7e"/></marker>
+  </defs>
+  <rect width="780" height="420" fill="#ffffff"/>
+  <!-- master -->
+  <rect x="215" y="12" width="350" height="150" rx="10" fill="#eef1f6" stroke="#14305a" stroke-width="2"/>
+  <text x="390" y="36" text-anchor="middle" font-size="17" font-weight="bold" fill="#14305a">Master</text>
+  <g font-size="14" font-weight="bold" text-anchor="middle" fill="#14305a">
+    <rect x="235" y="48" width="150" height="38" rx="6" fill="#ffffff" stroke="#3a6ea5"/><text x="310" y="72">Task Tracker</text>
+    <rect x="395" y="48" width="150" height="38" rx="6" fill="#ffffff" stroke="#2a8c7e"/><text x="470" y="72">Data Node</text>
+    <rect x="235" y="104" width="150" height="40" rx="6" fill="#bcd4f2" stroke="#3a6ea5" stroke-width="1.5"/><text x="310" y="129">Job Tracker</text>
+    <rect x="395" y="104" width="150" height="40" rx="6" fill="#bfe3dc" stroke="#2a8c7e" stroke-width="1.5"/><text x="470" y="129">Name Node</text>
+  </g>
+  <!-- slaves: Task Tracker (left) and Data Node (right) -->
+  <g font-size="13" font-weight="bold" text-anchor="middle" fill="#14305a">
+    <rect x="20" y="254" width="230" height="100" rx="10" fill="#eef1f6" stroke="#3b4a63" stroke-width="1.5"/>
+    <text x="135" y="276" font-size="15">Slave 1</text>
+    <rect x="30" y="290" width="102" height="50" rx="6" fill="#ffffff" stroke="#3a6ea5"/><text x="81" y="320">Task Tracker</text>
+    <rect x="138" y="290" width="102" height="50" rx="6" fill="#ffffff" stroke="#2a8c7e"/><text x="189" y="320">Data Node</text>
+
+    <rect x="275" y="254" width="230" height="100" rx="10" fill="#eef1f6" stroke="#3b4a63" stroke-width="1.5"/>
+    <text x="390" y="276" font-size="15">Slave 2</text>
+    <rect x="285" y="290" width="102" height="50" rx="6" fill="#ffffff" stroke="#3a6ea5"/><text x="336" y="320">Task Tracker</text>
+    <rect x="393" y="290" width="102" height="50" rx="6" fill="#ffffff" stroke="#2a8c7e"/><text x="444" y="320">Data Node</text>
+
+    <rect x="530" y="254" width="230" height="100" rx="10" fill="#eef1f6" stroke="#3b4a63" stroke-width="1.5"/>
+    <text x="645" y="276" font-size="15">Slave N</text>
+    <rect x="540" y="290" width="102" height="50" rx="6" fill="#ffffff" stroke="#3a6ea5"/><text x="591" y="320">Task Tracker</text>
+    <rect x="648" y="290" width="102" height="50" rx="6" fill="#ffffff" stroke="#2a8c7e"/><text x="699" y="320">Data Node</text>
+  </g>
+  <!-- Job Tracker -> Task Trackers (MapReduce) -->
+  <g stroke="#3a6ea5" stroke-width="1.6" fill="none" marker-end="url(#b)">
+    <line x1="280" y1="144" x2="85" y2="287"/>
+    <line x1="310" y1="144" x2="336" y2="287"/>
+    <line x1="340" y1="144" x2="585" y2="287"/>
+  </g>
+  <!-- Name Node -> Data Nodes (HDFS) -->
+  <g stroke="#2a8c7e" stroke-width="1.6" stroke-dasharray="6 4" fill="none" marker-end="url(#g)">
+    <line x1="440" y1="144" x2="194" y2="287"/>
+    <line x1="470" y1="144" x2="444" y2="287"/>
+    <line x1="500" y1="144" x2="695" y2="287"/>
+  </g>
+  <!-- legend -->
+  <g font-size="12.5" fill="#3b4a63">
+    <line x1="30" y1="384" x2="70" y2="384" stroke="#3a6ea5" stroke-width="1.6"/>
+    <text x="78" y="388">MapReduce: Job Tracker делит задание на части и раздаёт их Task Tracker, затем собирает результаты</text>
+    <line x1="30" y1="406" x2="70" y2="406" stroke="#2a8c7e" stroke-width="1.6" stroke-dasharray="6 4"/>
+    <text x="78" y="410">HDFS: Name Node управляет данными, которые хранят узлы Data Node</text>
+  </g>
+</svg>

@@ -308,11 +308,49 @@ def fix_html(n, el, html):
             if i < 0 or j < i:
                 raise SystemExit(f"patch range not found (lesson {n}): {p['find_from'][:60]}")
             html = html[:i] + p["replace"] + html[j + len(p["find_to"]):]
+    html = place_figures(n, el, html)
     for a, b in SYMBOL_FONT.items():
         html = html.replace(a, b)
     # links to the original Google Sites images expire within hours; the local copy in images/ is used instead
     html = re.sub(r'\s*data-original="[^"]*"', "", html)
     return tidy_word_lists(html)
+
+
+FIGURES = None
+
+
+def figure_html(f):
+    return (f'<figure class="fig"><img src="{f["src"]}" alt="{f["caption"]}"/>'
+            f'<figcaption>{f["caption"]}</figcaption></figure>')
+
+
+def place_figures(n, el, html):
+    """authored/figures.json: numbered captions for lesson images; figures drawn for the e-textbook
+    are inserted after the paragraph that refers to them."""
+    global FIGURES
+    if FIGURES is None:
+        ff = os.path.join(AUTH, "figures.json")
+        FIGURES = [x for x in json.load(open(ff, encoding="utf-8")) if "src" in x] if os.path.exists(ff) else []
+    for f in FIGURES:
+        if f["lesson"] != n or f["element"] != el:
+            continue
+        img = re.compile(r'<img[^>]*src="' + re.escape(f["src"]) + r'"[^>]*/?>')
+        if not f.get("after"):
+            if not img.search(html):
+                raise SystemExit(f"figure image not found (lesson {n}): {f['src']}")
+            html = img.sub(lambda m: figure_html(f), html, count=1)
+            continue
+        html = img.sub("", html, count=1)          # an existing image is moved to its reference
+        i = html.find(f["after"])
+        if i < 0:
+            raise SystemExit(f"figure anchor not found (lesson {n}): {f['after'][:60]}")
+        close = f.get("close", "</p>")
+        j = html.find(close, i)
+        if j < 0:
+            raise SystemExit(f"figure anchor end not found (lesson {n}): {f['after'][:60]}")
+        j += len(close)
+        html = html[:j] + "\n" + figure_html(f) + html[j:]
+    return html
 
 
 BULLET_P = re.compile(r"<p>\s*[·•▪]\s*((?:(?!</p>).)*)</p>", re.S)
@@ -375,6 +413,8 @@ def main():
         shutil.rmtree(OUT)
     os.makedirs(os.path.join(OUT, "lessons"))
     shutil.copytree(os.path.join(ROOT, "source", "images"), os.path.join(OUT, "images"))
+    if os.path.isdir(os.path.join(AUTH, "images")):          # figures drawn for the e-textbook
+        shutil.copytree(os.path.join(AUTH, "images"), os.path.join(OUT, "images"), dirs_exist_ok=True)
 
     # theory text of every lecture, for de-duplication of practices
     lecture_blocks, lecture_norms = {}, set()

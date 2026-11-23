@@ -210,3 +210,6 @@ dl.thes dt.hl, dl.thes dt.hl + dd { background: var(--warn-bg); }
   .main { padding: 0; max-width: none; }
 }
 .title-page .kk-title{margin:1rem auto;padding-top:.75rem;border-top:1px solid var(--line,#d5dbe3);max-width:40rem;font-size:.95em;line-height:1.5}
+.content figure.fig { margin: 16px 0 20px; }
+.content figure.fig img { max-width: 100%; height: auto; margin: 0 auto; background: #fff; }
+.content figure.fig figcaption { margin-top: 6px; text-align: center; font-size: .92rem; color: var(--text-2); }

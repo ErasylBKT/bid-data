@@ -213,3 +213,8 @@ dl.thes dt.hl, dl.thes dt.hl + dd { background: var(--warn-bg); }
 .content figure.fig { margin: 16px 0 20px; }
 .content figure.fig img { max-width: 100%; height: auto; margin: 0 auto; background: #fff; }
 .content figure.fig figcaption { margin-top: 6px; text-align: center; font-size: .92rem; color: var(--text-2); }
+/* весь текст выровнен по ширине; переносы слов — чтобы не было больших пробелов */
+main p, main li, main dd, main blockquote, main .note, main details > p { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+main .title-page p, main .title-page div, main figcaption, main td p, main th p, main .actions { text-align: center; }
+main td p, main th p { text-align: left; }
+main ol.bib li, main li:has(> a:only-child), main dd { text-align: left; }

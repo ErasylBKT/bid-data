@@ -42,18 +42,14 @@
     <dl class="kv">
       <dt>${esc(t('edType'))}</dt><dd>${esc(m.subtitle_ru)}; ${esc(m.audience_ru)}</dd>
       <dt>${esc(t('specialty'))}</dt><dd>${val(kk && m.specialty_kk ? m.specialty_kk : m.specialty)}</dd>
-      <dt>${esc(t('reviewers'))}</dt><dd>${(m.reviewers || []).map(val).join('<br>')}</dd>
-      <dt>${esc(t('publisher'))}</dt><dd>${val(m.publisher && m.publisher.name)}; ${val(m.publisher && m.publisher.address)}; ${val(m.publisher && m.publisher.email)}; ${val(m.publisher && m.publisher.phone)}</dd>
       <dt>${esc(t('developer'))}</dt><dd>${val(m.developer && m.developer.name)}; ${val(m.developer && m.developer.email)}; ${val(m.developer && m.developer.phone)}</dd>
       <dt>${esc(t('volume'))}</dt><dd>${esc(m.size_mb)} МБ; ${App.modules.length} ${esc(t('modulesW'))}, ${App.blocks.length} ${esc(t('blocksW'))}, ${App.lessons.length} ${esc(t('lessonsW'))}</dd>
       <dt>${esc(t('kit'))}</dt><dd>${esc(t('kitText'))}</dd>
       <dt>${esc(t('sysreq'))}</dt><dd>${esc(m.system_requirements_ru)}</dd>
-      <dt>${esc(t('udc'))}</dt><dd>${val(m.udc)}</dd>
       <dt>${esc(t('copyright'))}</dt><dd>${val(m.copyright)}</dd>
-      <dt>${esc(t('regNo'))}</dt><dd>${esc(t('regNoText'))}</dd>
     </dl>
     <h3>${esc(t('bibliography'))}</h3>
-    <ol>${(m.bibliography || []).map((b) => `<li>${val(b)}</li>`).join('')}</ol>
+    <ol class="bib">${(m.bibliography || []).filter((b) => !isTodo(b)).map((b) => `<li>${esc(b)}</li>`).join('')}</ol>
     <h3>${esc(t('docs'))}</h3>
     <ul><li><a href="docs/install.html" target="_blank" rel="noopener">${esc(t('docInstall'))}</a></li><li><a href="docs/user-guide.html" target="_blank" rel="noopener">${esc(t('docUser'))}</a></li><li><a href="docs/content-guide.html" target="_blank" rel="noopener">${esc(t('docContent'))}</a></li><li><a href="README.txt" target="_blank" rel="noopener">README.txt</a></li></ul>
     <p class="muted">${esc(t('build'))}: ${esc(C.build)}</p>`;

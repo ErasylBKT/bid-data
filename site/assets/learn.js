@@ -62,56 +62,16 @@
 
   /* ================= ПОЛЬЗОВАТЕЛИ (регистрация, корректировка, удаление) ================= */
   App.routes.users = function (main) {
-    const db = App.db(), u = App.user();
-    const list = Object.values(db.users).sort((a, b) => a.name.localeCompare(b.name));
-    let h = `<h1>${esc(t('users'))}</h1><p class="lead">${esc(t('usersLead'))}</p>`;
-    if (u) {
-      const p = App.progress();
-      h += `<div class="card"><h2 style="margin-top:0">${esc(u.name)}</h2>
-        <p class="muted">${esc(t('group'))}: ${esc(u.group || '—')} · ${esc(t('registered'))}: ${App.fmtDate(u.created)} · PIN: ${u.pin ? esc(t('yes')) : esc(t('no'))}</p>
+    const db = App.db(), u = App.user(), p = App.progress();
+    main.innerHTML = `<h1>${esc(t('modeTitle'))}</h1><p class="lead">${esc(t('modeLead'))}</p>
+      <div class="card">
         <label class="check"><input type="radio" name="mode" value="learn" ${p.mode !== 'view' ? 'checked' : ''}> <span><strong>${esc(t('modeLearn'))}</strong> — ${esc(t('modeLearnD'))}</span></label>
         <label class="check"><input type="radio" name="mode" value="view" ${p.mode === 'view' ? 'checked' : ''}> <span><strong>${esc(t('modeView'))}</strong> — ${esc(t('modeViewD'))}</span></label>
-        <div class="actions"><button class="btn secondary" id="edit" data-tip="editUser">${esc(t('edit'))}</button>
-        <button class="btn secondary" id="logout" data-tip="logout">${esc(t('logout'))}</button>
-        <button class="btn danger" id="del" data-tip="deleteUser">${esc(t('deleteProfile'))}</button></div></div>`;
-    }
-    if (list.length) {
-      h += `<h2>${esc(t('profilesHere'))}</h2><div class="grid2">` + list.map((x) =>
-        `<button class="card" style="text-align:left;cursor:pointer;font:inherit" data-uid="${esc(x.id)}" data-title="${esc(t('tip_signInAs'))}"><strong>${esc(x.name)}</strong><br><span class="muted">${esc(x.group || '')}${x.pin ? ' · PIN' : ''}${x.id === db.current ? ' · ' + esc(t('current')) : ''}</span></button>`).join('') + '</div>';
-    }
-    h += `<h2>${esc(t('register'))}</h2><form class="card soft" id="reg" autocomplete="off">
-      <label for="rName">${esc(t('fullName'))} *</label><input type="text" id="rName" maxlength="80" required>
-      <label for="rGroup">${esc(t('group'))}</label><input type="text" id="rGroup" maxlength="40">
-      <label for="rPin">${esc(t('pinOpt'))}</label><input type="password" id="rPin" inputmode="numeric" maxlength="12">
-      <div class="error-text" id="rErr" role="alert"></div>
-      <div class="actions"><button class="btn" type="submit" data-tip="register">${esc(t('register'))}</button></div></form>
+        <div class="actions"><a class="btn" href="${esc(p.last || '#/toc')}">${esc(t('continue'))}</a>
+        <button class="btn danger" id="resetMine">${esc(t('resetMine'))}</button></div></div>
       <p class="muted">${esc(t('privacy'))} <a href="#/teacher">${esc(t('teacherPanel'))}</a></p>`;
-    main.innerHTML = h;
-
     $$('[name=mode]', main).forEach((r) => (r.onchange = () => { App.progress().mode = r.value; App.save(); App.renderChrome(); }));
-    $$('[data-uid]', main).forEach((b) => (b.onclick = () => signIn(db.users[b.dataset.uid])));
-    $('#reg', main).onsubmit = (e) => {
-      e.preventDefault();
-      const name = $('#rName').value.trim().replace(/\s+/g, ' ');
-      const pin = $('#rPin').value.trim();
-      const err = $('#rErr');
-      if (name.length < 3) { err.textContent = t('errName'); $('#rName').focus(); return; }
-      if (pin && !/^\d{4,12}$/.test(pin)) { err.textContent = t('errPin'); $('#rPin').focus(); return; }
-      if (Object.values(db.users).some((x) => x.name.toLowerCase() === name.toLowerCase())) { err.textContent = t('errExists'); return; }
-      const id = 'u' + Date.now().toString(36);
-      db.users[id] = { id, name, group: $('#rGroup').value.trim(), pin: pin ? App.hashPin(pin) : null, created: Date.now() };
-      db.current = id;
-      App.progress();
-      App.save();
-      App.go('#/toc');
-    };
-    if (u) {
-      $('#logout', main).onclick = () => { db.current = null; App.save(); App.go('#/users'); };
-      $('#edit', main).onclick = () => editUser(u);
-      $('#del', main).onclick = () => requirePin(u, () => App.confirm(t('confirmDelete', { name: u.name }), () => {
-        delete db.users[u.id]; delete db.progress[u.id]; db.current = null; App.save(); App.go('#/users');
-      }));
-    }
+    $('#resetMine', main).onclick = () => App.confirm(t('confirmResetMine'), () => { delete db.progress[u.id]; App.progress(); App.save(); App.go('#/toc'); });
   };
 
   function requirePin(u, ok) {

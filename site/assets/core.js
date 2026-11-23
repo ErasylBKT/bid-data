@@ -89,6 +89,11 @@
     const p = DB.progress[uid];
     if (p && p.sig && p.sig !== sign(p) && !p.tampered) p.tampered = Date.now();
   });
+  // без регистрации: все результаты на этом устройстве ведутся в одном профиле «Студент»
+  if (!DB.current || !DB.users[DB.current]) {
+    if (!DB.users.guest) DB.users.guest = { id: 'guest', name: 'Студент', group: '', pin: null, created: Date.now() };
+    DB.current = 'guest';
+  }
   App.db = () => DB;
   App.settings = () => DB.settings;
   App.replaceDB = (obj) => { DB = Object.assign(defaults(), obj); App.save(); };
@@ -209,7 +214,7 @@
     $$('[data-i18n]').forEach((el) => { el.textContent = App.t(el.dataset.i18n); });
     $('#langBtn').textContent = App.lang() === 'kk' ? 'RU' : 'KZ';
     const u = App.user();
-    $('#userPill').textContent = u ? u.name : App.t('signIn');
+    $('#userPill').textContent = App.t(App.learning() ? 'modeLearn' : 'modeView');
     $$('.topnav a').forEach((a) => a.classList.toggle('active', location.hash.indexOf(a.getAttribute('href')) === 0));
     App.renderSidebar();
   };
